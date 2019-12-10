@@ -1,0 +1,191 @@
+@media screen{
+	.tm-nav-item-link:hover{
+		color: #fff;
+		background: lightskyblue;
+	}
+	
+	.tm-banner{
+		background: linear-gradient(90deg, lightskyblue, burlywood);
+	}
+
+	.tm-banner-inner{
+		background: white;
+	}
+
+	.tm-banner-text{
+		text-shadow: #333 5px 5px 3px;
+		animation-duration: 5s;
+		animation-name: slide;
+	}
+
+	@keyframes slide {
+		from {
+			transform: translateX(200px);
+		}
+
+		to {
+			transform: translateX(0);
+		}
+	}
+	
+	.tm-team-img{
+		float: right;
+	}
+
+	.flex-2-col{
+		display: flex;
+		align-items: center;
+	}
+
+	.flex-2-col .tm-section-title {
+    text-align: center;
+	}
+
+	.tm-section-description{
+		text-indent: 2em;
+	}
+	
+	.box-bg:hover{
+		background: lightgrey;
+	}
+
+	.heading h2{
+		color: lightskyblue;
+		text-align: center;
+	}
+	
+	ol {
+		list-style-type: lower-alpha;
+	}
+	
+	.heading ol li:hover::before {
+		content: ">";
+		font-weight: bold;
+	}
+	
+	.heading ol li:nth-child(1)::after,
+	.heading ol li:nth-child(3)::after {
+		content: "New";
+		color: red;
+		font-weight: bold;
+		vertical-align: top;
+		display: inline-block;
+		font-size: 0.5em;
+	}
+
+	.blocks .tm-team-description-container :last-child {
+		word-spacing: 10px;
+		letter-spacing: 5px;
+		font-style: italic;
+	}
+	
+	.blocks ul li:nth-child(odd){
+		background: lightskyblue;
+		color: white;
+	}
+	
+	.box-work{
+		padding: 10px;
+	}
+	
+	.box-work p::first-letter{
+		font-weight: bold;
+	}
+	
+	p .tm-section-description{
+		text-indent: 25px;
+		line-height: 30px;
+	}
+	
+	.contact-form input{
+		border: none;
+		border-bottom: 1px solid lightskyblue;
+		
+	}
+	
+	.contact-form input:focus {
+		background-color: lightskyblue;
+	}
+	
+	#contact_message{
+		border: 1px solid lightskyblue;
+		background: url(../img/email-icon.png) no-repeat;
+		background-position: bottom 0.5em right 0.5em;
+		background-size: 2.5em;
+	}
+	
+	.tm-sidebar, .tm-content-header, section{
+		box-shadow: 0 0 1em rgba(61, 55, 61, 0.7);
+	}
+	
+	section:before {
+		content: "";
+		border-style: solid;
+		border-width: 3em 3em 0 0;
+		border-color: lightskyblue transparent transparent transparent;
+	}
+	
+	.btn{
+		background: white;
+		border-color: lightskyblue;
+		color: lightskyblue;
+		border-radius: 3px;
+	}
+
+}
+
+
+@media print{
+
+	.tm-sidebar, .tm-team-img, .gallery-container, .carousel-indicators, .img-contact-us, #contact{
+		display: none;
+	}
+
+	h2 {
+		color: lightskyblue;
+		font-weight: 300;
+		text-align: center;
+	}
+	
+	.tm-section-description{
+		text-align: center;
+	}
+	
+	.heading ol li:nth-child(odd){
+		list-style-type: none;
+		text-align: end;
+		padding-left: none;
+	}
+	
+	.heading ol li:nth-child(even){
+		list-style-type: none;
+		text-align: start;
+		padding-left: none;
+	}
+	
+	.blocks .tm-team-description-container :last-child {
+		word-spacing: 10px;
+		letter-spacing: 5px;
+		font-style: italic;
+	}
+
+	.tm-team-description-container, .tm-content-box{
+		max-width: 100%;
+		margin:0;
+	}
+
+	body, .blocks .padding-medium, .heading .padding-medium, .tm-main-content, .content-box, .flex-2-col  {
+		padding-top: 0;
+		padding-bottom: 0;
+		margin: 0 auto;
+	}	
+	
+	.tm-team-description-container {
+		margin: 0 auto;
+		padding-top: 0;
+		text-align: center;
+	}
+	
+	
+	
+}
