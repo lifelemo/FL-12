@@ -1,0 +1,235 @@
+@mixin button() {
+	background: $colorButton;
+	border: none;
+	color: $colorButtonText;
+	border-radius: 3px;
+	font-family: map-get($fonts, "Source"), sans-serif;
+	font-size: 15px;
+	padding: 10px 30px;
+}
+
+@mixin link() {
+	color: $colorText;
+	font-family: map-get($fonts, "Source"), sans-serif;
+	font-size: 15px;
+}
+
+body {
+    background: $contentBackground;
+	margin: 0;
+	header {
+		background: $headerBackground center center no-repeat;
+		background-size: cover;
+		height: 30em;
+		border-bottom-right-radius: 32em 13em;
+		
+		.header-wrap {
+			color: $colorTextHeader;
+			padding-left: 7em;
+			position: relative;
+			z-index: 1;
+			
+			.header_heading {
+				margin: 0.4em 0;
+				width: 500px;
+				font-family: map-get($fonts, "Source"), sans-serif;
+				font-size: 50px;
+				font-weight: 800;
+				line-height: 1;
+				
+				&::before {
+					position: absolute;
+					z-index: -1;
+					content: '';
+					background-color: $colorHighlight;
+					width: 210px;
+					height: 40px;
+					left: 110px;
+					top: 150px;
+					
+				}
+			}
+			
+			
+			.header_text {
+				font-size: 12px;
+				font-family: $fontMain;
+				white-space: pre-line;
+			}
+			
+			.header_button {
+				margin-top: 35px;
+				@include button;
+			}
+			.login {
+				margin-left: 7em;
+				@include link;
+			}
+		}
+	}
+	
+	.landing-logo {
+				display: flex;
+				padding-top: 5px;
+				flex-direction: row;
+				align-items: center;
+				font-family: $fontMain;
+				img {
+					max-height: 30px;
+					max-width: 30px;
+				}
+				p {
+					padding-left: 10px;
+					padding-bottom: 0;
+					line-height: 1.25;
+					font-weight: 600;
+				}
+				span {
+					font-weight: 500;
+					padding-top: 0;
+					display:block;
+					font-size: 7px;
+					text-align: center;
+				}
+			}
+	
+	.section {
+	
+		.section_text {
+			position: relative;
+			z-index: 1;
+			text-align: center;
+			color: $colorTextHeader;
+			font-family: map-get($fonts, "Source"), sans-serif;
+			font-size: 25px;
+			font-weight: 600;
+			
+			&::before {
+				position: absolute;
+				z-index: -1;
+				content: '';
+				background-color: $colorHighlight;
+				width: 115px;
+				height: 30px;
+				left: 485px;
+				top: 3px;
+			}
+		}
+		
+		.section_card {
+			background: $colorBlock;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 1em;
+			margin-bottom: 1em;
+			width: 45em;
+			display: flex;
+			padding: 1em;
+			border-radius: 4px;
+			
+			.section_card_img {
+				border-radius: 4px;
+			}
+			
+			.section_card_right_container{
+				padding-right: 10%;
+				padding-left: 10%;
+				text-align: center;
+				color: $colorText;
+				
+				
+				.section_card_heading {
+					font-family: map-get($fonts, "Source"), sans-serif;
+					font-size: 20px;
+					font-weight: 600;
+				}
+				.section_card_text{
+					font-size: 12px;
+					font-family: $fontMain;
+					font-weight: 300;
+					line-height: 1.5;
+					text-align: justify;
+				}
+			}
+			
+			.section_link {
+				@include link;
+			}
+			
+		}
+		
+		.section_banner {
+			position: relative;
+			top: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			background: linear-gradient(to right, $colorGradient1, $colorGradient2);
+			border-radius: 4px;
+			width: 50em;
+			margin: auto;
+			.section_banner_heading {
+				position: relative;
+				z-index: 1;
+				color: $colorTextHeader;
+				font-size: 20px;
+				font-family: map-get($fonts, "Source"), sans-serif;
+				font-weight: 700;
+				margin-bottom: 0;
+				
+				&::before {
+					position: absolute;
+					z-index: -1;
+					content: '';
+					background-color: $colorHighlight;
+					width: 45px;
+					height: 30px;
+					left: 80px;
+				}
+			}
+			
+			.section_banner_text {
+				margin-bottom: 25px;
+				color: $colorText;
+				font-size: 12px;
+				font-family: $fontMain;
+			}
+			
+			.section_banner_button {
+				@include button;
+			}
+		}
+		
+	}
+	
+	footer{
+		color: $colorText;
+		background: $colorBlock;
+		
+		.footer-wrap {
+		
+			padding: 50px 100px 20px 100px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			
+			.footer_text {
+				max-width: 250px;
+				font-size: 12px;
+				font-family: $fontMain;
+				font-weight: 300;
+				line-height: 1.5;
+			}
+			
+			.footer-cr {
+				@extend .footer_text;
+			}
+		}
+	}
+	
+}
+
+main {
+      margin: 0 auto;
+      width: 960px;
+}
