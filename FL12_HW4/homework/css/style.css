@@ -1,0 +1,160 @@
+body {
+	margin: 0;
+}
+
+hr{
+	margin: 70px 0;
+	color: #777;
+}
+
+.sidebar {
+	color: #777;
+	display: flex;
+	align-items: center;
+	background: #fff;
+	justify-content: space-between;
+	position: fixed;
+	left: 0;
+    right: 0;
+    top: 0;
+	padding: 0 13%;
+}
+
+.sidebar_heading {
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+}
+
+.nav_item {
+	color: #777;
+	text-decoration: none;
+	font-size: 90%;
+	padding: 0 1em;
+}
+
+.nav_item:hover {
+	color: #bfba55;
+}
+
+.header_content {
+	margin: 40px 0;
+	background: linear-gradient(rgba(0,0,0,0.6),
+         rgba(0,0,0,0.6)), url(../img/home-bg.jpg) center top no-repeat;
+	background-size: cover;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	
+}
+
+
+.header_heading {
+	color: #fff;
+	font-size: 4em;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.header_text {
+	margin-top: 0;
+	font-weight: 500;
+	color: #bfba55;
+}
+
+.header_button {
+	margin: 20px 0;
+	color: #777;
+	text-transform: uppercase;
+	font-size: 70%;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	background: #fff;
+	border: 0 solid #777;
+	border-radius: 20px;
+	max-width: 150px;
+	padding: 1em 1.5em;
+	
+}
+
+.section {
+	margin: 80px auto 0 auto;
+	display: flex;
+	flex-direction: column;
+	width: 800px;
+}
+
+.section_card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.section_card_img {
+	width: 800px;
+}
+
+.section_card_heading {
+	font-size: 1.5em;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.section_card_text {
+	color: #777;
+}
+
+.section_button {
+	margin: 20px 0 0 0;
+	color: #777;
+	font-size: 70%;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	background: #fff;
+	border: 0.5px solid #777;
+	border-radius: 20px;
+	max-width: 150px;
+	padding: 1em 1.5em;
+}
+
+.section_card_info {
+	display: flex;
+	justify-content: space-between;
+	width: 350px;
+	align-items: center;
+	color: #777;
+}
+
+.author_img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50px;
+}
+
+.footer {
+	padding: 0;
+	background: #000;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 40px;
+	margin-top: 100px;
+}
+
+.footer_heading {
+	color:  #fff;
+	font-size: 1.5em;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.footer_text {
+	color:  #777;
+}
+
+.footer_content, .footer_contact {
+	max-width: 400px;
+}
