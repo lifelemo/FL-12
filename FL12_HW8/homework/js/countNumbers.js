@@ -1,5 +1,11 @@
-function makeNumber(str) {
-  return str.replace(/[^\d]/g,'');
+function makeNumber (str) {
+  var strOfNum = '';
+  for (let symbol of str) {
+    if (parseInt(symbol)) {
+      strOfNum += symbol;
+    }
+  }
+  return strOfNum;
 }
 
 function countNumbers(str) {
